@@ -40,7 +40,7 @@ main section:last-of-type article{
 @media screen and (max-width: 425px) {
     /*Selector Specifity: (012)*/
     main section:last-of-type{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 1fr);
         gap: 1% 3%;
     }

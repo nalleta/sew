@@ -64,7 +64,7 @@ class Pais {
                 for(let i = 0 ; i < registros.length ; i++){
                     var element = registros[i];
                     if($(element).attr("from").split("T")[1]==="00:00:00"){
-                        console.log(element);
+                        
                         var art = document.createElement("article");
                         var h = document.createElement("h4");
                         var maxTemp = document.createElement("p");

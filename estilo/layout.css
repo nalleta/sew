@@ -9,7 +9,7 @@ main section:last-of-type>div {
     height: 30vw; 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 465px) {
     /*Selector Specificity: (012)*/
     header{
         display: grid;
