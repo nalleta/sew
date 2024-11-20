@@ -122,4 +122,15 @@ body video {
     body > p:first-of-type{
         display:none;
     }
+
+    body {
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    /*Selector Specificity: (001)*/
+    body {
+        padding: 0em;
+    }
 }
