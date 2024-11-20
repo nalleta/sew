@@ -1,0 +1,10 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main section:last-of-type>div {
+    width:30vw; 
+    height: 30vw; 
+}
