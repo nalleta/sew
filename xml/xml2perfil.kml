@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>
+Circuito AlbertPark
+</name><Placemark><LineString><extrude>
+1
+</extrude><tessellation>
+1
+</tessellation><coordinates>
+144.9689996,-37.8500761,0
+144.9660005,-37.8475972,0
+144.9662229,-37.8467394,0
+144.9621462,-37.8422066,0
+144.9637148,-37.8417953,0
+144.9637168,-37.8398564,0
+144.9678925,-37.8380550,0
+144.9693757,-37.8384531,0
+144.9713322,-37.8396853,0
+144.9717477,-37.8416460,0
+144.9705818,-37.8445734,0
+144.9715911,-37.8469014,0
+144.9734176,-37.8480928,0
+144.9747817,-37.8481040,0
+144.9772939,-37.8498499,0
+144.9786139,-37.8533880,0
+144.9757788,-37.8539085,0
+144.9741073,-37.8520983,0
+144.9727597,-37.8528808,0
+144.9689850,-37.8500634,0
+</coordinates><altitudeMode>
+relativeToGround
+</altitudeMode></LineString><Style><LineStyle><color>
+#ff0000ff
+</color><width>
+5
+</width></LineStyle></Style></Placemark></Document></kml>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://www.uniovi.es" elementFormDefault="qualified" targetNamespace="http://www.uniovi.es" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="circuitos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="circuito" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="circuito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre" />
+				<xs:element ref="longitud" />
+				<xs:element ref="anchura" />
+				<xs:element ref="fecha" />
+				<xs:element ref="hora" />
+				<xs:element ref="vueltas" />
+				<xs:element ref="localidad" />
+				<xs:element ref="pais" />
+				<xs:element minOccurs="3" maxOccurs="unbounded" ref="fuente" />
+				<xs:element minOccurs="1" maxOccurs="5" ref="fotografia" />
+				<xs:element minOccurs="0" maxOccurs="3" ref="video" />
+				<xs:element ref="coordenadas" />
+				<xs:element ref = "tramos"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombre" type="xs:string" />
+	<xs:element name="longitud">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="double_positivo_type">
+					<xs:attribute name="magnitud" type="magnitudes" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="anchura">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="double_positivo_type">
+					<xs:attribute name="magnitud" type="magnitudes" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="fecha" type="xs:date" />
+	<xs:element name="hora" type="xs:time" />
+	<xs:element name="vueltas" type="xs:positiveInteger" />
+	<xs:element name="localidad" type="xs:string" />
+	<xs:element name="pais" type="xs:string" />
+	<xs:element name="fuente" type="xs:string" />
+	<xs:element name="fotografia" type="xs:string" />
+	<xs:element name="video" type="xs:string" />
+	
+	<xs:simpleType name ="longitud_type">
+		<xs:restriction base="xs:double">
+			<xs:minInclusive value ="-180"/>
+			<xs:maxInclusive value ="180"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name ="latitud_type">
+		<xs:restriction base="xs:double">
+			<xs:minInclusive value ="-90"/>
+			<xs:maxInclusive value ="90"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name ="double_positivo_type">
+		<xs:restriction base="xs:double">
+			<xs:minInclusive value ="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name ="magnitudes">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="metros"/>
+			<xs:enumeration value="kilómetros"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="coordenadas">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="longitud" type="longitud_type" use="required" />
+					<xs:attribute name="latitud" type="latitud_type" use="required" />
+					<xs:attribute name="altitud" type="double_positivo_type" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="tramos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="tramo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="tramo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="distancia" />
+				<xs:element ref="coordenadas" />
+			</xs:sequence>
+			<xs:attribute name="numero" type="xs:positiveInteger" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="distancia">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="double_positivo_type">
+					<xs:attribute name="magnitud" type="magnitudes" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
