@@ -98,7 +98,7 @@ class Memoria {
         var secction = document.querySelector("main section:last-of-type");
         this.cartas.forEach(carta => {
             var article = document.createElement("article");
-            var encabezado = document.createElement("h3");
+            var encabezado = document.createElement("h4");
             var img = document.createElement("img");
             encabezado.textContent = "Tarjeta de memoria";
             img.src = carta.enlace;
