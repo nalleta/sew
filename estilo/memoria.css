@@ -6,7 +6,7 @@ section:last-of-type{
     justify-content: space-around;    
 }
 
-section:last-of-type h2:first-child{
+section:last-of-type h3:first-child{
     width: 80%;
     display:flex;
     align-items: center;
@@ -37,7 +37,7 @@ article[data-state=flip] {
 article img, article[data-state=revealed] {
     transform: rotateY(180deg);
 }
-article h3,
+article h4,
 article img {
     margin: 0em;
     width: 100%;
