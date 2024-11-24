@@ -95,7 +95,7 @@ class Memoria {
     }
 
     createElements(){
-        var secction = document.querySelector("section:last-of-type");
+        var secction = document.querySelector("main section:last-of-type");
         this.cartas.forEach(carta => {
             var article = document.createElement("article");
             var encabezado = document.createElement("h3");
@@ -111,7 +111,7 @@ class Memoria {
     }
     
     addEventListeners(){
-        var articulos = document.querySelectorAll("section:last-of-type article");
+        var articulos = document.querySelectorAll("main section:last-of-type article");
         articulos.forEach(articulo => {
             articulo.addEventListener("click", this.flipCard.bind(articulo, this))
         });
