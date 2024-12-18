@@ -1,0 +1,91 @@
+/* Ignacio Llaneza Aller UO294914 */
+/*Specificity(011)*/
+section:last-of-type{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+/*Specificity(001)*/
+section+h3 {
+    border-bottom-style: solid;
+    border-bottom-color: darkolivegreen;
+}
+/*Specificity(022)*/
+section:last-of-type h4:first-child{
+    flex-basis: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Specificity(001)*/
+article {
+    height: 10em;
+    margin-top: 2em;
+    flex-basis: 23%;
+    transform: scale(1);
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+/*Specificity(011)*/
+article[data-state=flip] {
+    transform: rotateY(180deg);
+}
+/*Specificity(002), Specificity(011)*/
+article img, article[data-state=revealed] {
+    transform: rotateY(180deg);
+}
+
+/*Specificity(002)*/
+article h4 {
+    margin: 0em;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 0.5em;
+    text-align: center;
+    background: #1C7CCC;
+    /*Color heredado de h4 en estilo.css*/
+    backface-visibility: hidden;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Specificity(002)*/
+article img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 0.5em;
+    /*Color heredado de body en estilo.css*/
+    background: #1C7CCC;
+    backface-visibility: hidden;
+}
+
+@media screen and (max-width: 800px) {
+    /*Selector Specifity: (001)*/
+    article{
+        /*Redefinición de característica flex-basis*/
+        flex-basis: 32%;
+        /*Redefinición de altura*/
+        height: 7em;
+        /*Redefinición de margen superior*/
+        margin-top: 2em;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    /*Selector Specifity: (001)*/
+    article{
+        /*Redefinición de altura*/
+        height: 6em;
+        /*Redefinición de margen superior*/
+        margin-top: 1em;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>F1Desktop-Noticias</title>
+    <meta name="author" content="Ignacio Llaneza">
+    <meta name="description" content="documento para utilizar en otros módulos de la asignatura">
+    <meta name="keywords" content="noticias">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/article_elements.css">
+    <link rel="icon" href="multimedia/imagenes/iconoF1.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/noticias.js"></script>
+</head>
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+    <h1>F1Desktop</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="piloto.html">Piloto</a>
+        <a class="active" href="noticias.html">Noticias</a>    
+        <a href="calendario.html">Calendario</a>
+        <a href="meteorologia.html">Meteorología</a>
+        <a href="circuito.html">Circuito</a>
+        <a href="viajes.php">Viajes</a>
+        <a href="juegos.html">Juegos</a>
+    </nav>
+    </header>
+    <p>Estás en: <a href="index.html">Inicio</a> / <a href="noticias.html">Noticias</a></p>
+    <main>
+        <h2>Noticias</h2>
+        <section> 
+            <h3>Crea tus noticias</h3>
+                <form>
+                    <h4>Titular</h4>
+                    <p><label>Introduce el titular de tu noticia: <input type="text"></label></p>
+                    <h4>Contenido</h4>
+                    <p><label>Introduce el contenido principal de tu noticia: <input type="text"></label></p>
+                    <h4>Autor</h4>
+                    <p>Escribe quién es el autor de tu noticia: <input type="text"></p>
+                </form>
+                <h4>Añadir a las noticias</h4>
+                <button onclick="not.parseFields();">Añadir</button>
+        </section>
+        <section>
+            <h3>Carga tus noticias</h3>
+            <script>var not = new Noticias();  </script>
+            <p><label> Añade tus propias noticias: <input type="file" onchange="not.readInputFile(this.files);"></label></p>
+        </section>
+        <section>
+            <h3>Tus noticias</h3>
+        <article><h3>Alonso, más cerca de ser historia en Asturias</h3><p>El asturiano está en proceso de ampliar su museo y circuito consiguiendo algo nunca antes visto en el Principado</p><p>Javier Pazos</p></article><article><h3>Briatore asegura que da igual el piloto que fiche Alpine para 2025</h3><p>Cree que no marcará la diferencia y se quiere centrar en 2026</p><p>Pol Hermoso</p></article><article><h3>En McLaren creen en la remontada de Aston Martin</h3><p>Zak Brown, CEO de la escudería británica, asegura que en 2025 puede haber varios equipos que mejoren su rendimiento, cómo han hecho ellos este año</p><p>Manuel Rodriguez</p></article></section>
+    </main>
+</body></html>

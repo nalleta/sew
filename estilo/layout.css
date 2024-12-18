@@ -1,0 +1,14 @@
+/* Ignacio Llaneza Aller UO294914 */
+/*Selector Specificity: (001)*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 465px) {
+    /*Selector Specificity: (001)*/
+    header{
+        flex-direction: column;
+    }
+}

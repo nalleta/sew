@@ -1,0 +1,273 @@
+/* Ignacio Llaneza Aller UO294914 */
+/*Selector Specificity: (001)*/
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    color: #241004;
+    background-color: #BFD5BE;
+    padding: 2em;
+}
+/*Selector Specificity: (001) de todos*/
+h1,h2,h3,h4,h5,h6{
+    color: #000000;
+    /*Background-color heredada de body para todos los headers*/
+}
+
+/*Specificity: (001)*/
+h2{
+    border-bottom-style: solid;
+    border-bottom-color: darkolivegreen;
+}
+
+/*Specificity: (001)*/
+h6{
+    font-size: large;   /*Es demasiado pequeño y da errores de accesibilidad*/
+}
+
+/*Selector Specificity: (001)*/
+header{
+    /*color: #3b1a07;heredado de body*/
+    background-color: #86AF83;
+    padding: 1em;
+}
+
+/*Selector Specificity: (001)*/
+a{
+    /*background-color: #BFD5BE;heredado de body*/
+    color: #241004;
+}
+
+/*Selector Specificity: (002)*/
+body a{
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+/*Selector Specificity: (003)*/
+header nav a{
+    text-decoration: overline;
+    font-size: large;
+    margin: 0.2em;
+}
+
+/*Selector Specifity: (002)*/
+h1 a{
+    text-decoration: none;
+}
+
+/*Selector Specificity: (001)*/
+h1{
+    font-size: 2em;
+}
+
+/*Selector Specificity: (001)*/
+main {
+    background-color: #BFD5BE;
+    /*color: #3b1a07;heredado de body*/
+}
+
+/*Selector Specificity: (013)*/
+body > p:first-of-type a{
+    text-decoration-style: solid;
+    background-color: #BFD5BE;
+    color: #005C51;
+}
+
+/*Selector Specificity: (012)*/
+body > p:first-of-type{
+    font-size: 0.8em;
+}
+
+/*Selector Specificity: (003)*/
+body ul li{
+    list-style: circle;
+}
+/*Selector Specificity: (003)*/
+body ol li{
+    list-style: decimal-leading-zero;
+}
+/*Selector Specificity: (002)*/
+body table{
+    table-layout: fixed;
+    width: 80%;
+    border-collapse: collapse;
+    border: 0.1em solid black;
+    background-color: #86AF83;
+    color: #241004;
+    margin: 0.5em;
+}
+
+/*Selector Specificity: (003)*/
+body table caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+/*Selector Specificity: (002), Selector Specificity: (002)*/
+body td, body th{
+  text-align: center;
+  font-size: 1.3em;
+  padding: 0.2em;
+  border: 0.1em solid #000000;
+}
+
+/*Selector Specificity: (002)*/
+body video {
+    width:80%;
+    height:auto;
+    border: #000000;    
+    border-width: 0.1em;
+    border-style: double;
+}
+
+/*Selector Specificity:(010)*/
+.active{
+    color: #750000;
+    /*Background olor heredado de header*/
+}
+
+/*Selector Specificity:(002)*/
+h6+img{
+    width: 80%;
+}
+
+/*Selector Specificity:(004)*/
+main section h4+div{
+    width: 80%;
+    height: 80%;
+}
+
+/*Selector Specificity:(005)*/
+main section h3+button+img{
+    width: 40%;
+}
+ 
+/*Selector Specificity:(005)*/
+main button+section+section+article {
+    width: 100%;
+    max-width: 100vh;
+    height: 70vh;
+    position: relative;
+    overflow: hidden; /* <===  */
+    border-radius: 1em;
+}
+  
+/*Selector Specificity:(006)*/
+main button+section+section+article>h3 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0.5em;
+      font-size: 2em;
+}
+  
+/*Selector Specificity:(006)*/
+main button+section+section+article>img {
+    width: 100%;
+    max-width: 100vh;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+  
+/*Selector Specificity:(006)*/
+main button+section+section+article>button {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+/*Selector Specificity:(016)*/
+main button+section+section+article>button:active {
+    transform: scale(1.1);
+}
+  
+/*Selector Specificity:(016)*/
+main button+section+section+article>button:nth-of-type(2) {
+    top: 50%;
+    left: 2%;
+}
+  
+/*Selector Specificity:(016)*/
+main button+section+section+article>button:nth-of-type(1) {
+    top: 50%;
+    right: 2%;
+}
+
+/*Imagen del mapa en viajes.html*/
+/*Estático*/
+/*Selector Specificity: (013)*/
+main section:nth-of-type(1)>img {
+    width: 40em; 
+    height: 40em; 
+}
+/*Dinámico*/
+/*Selector Specificity: (013)*/
+main section:nth-of-type(2)>div {
+    width: 60vw; 
+    height: 30vw; 
+}
+
+
+@media screen and (max-width: 800px) {
+    /*Selector Specificity: (012)*/
+    body > p:first-of-type{
+        display:none;
+    }
+    /*Selector Specificity: (001)*/
+    body {
+        /*Redefinido padding de body*/
+        padding: 1em;
+    }
+    /*Selector Specificity: (005)*/
+    main section h3+button+img{
+        /*Redefinido tamaño de imagen*/
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    /*Selector Specificity: (001)*/
+    body {
+        /*Redefinido padding*/
+        padding: 0em;
+    }
+    /*Selector Specificity: (003)*/
+    header nav a{
+        /*Redefinido tamaño de fuente para móviles*/
+        font-size: x-large;
+    }
+    /*Selector Specificity: (014)*/
+    main section:nth-of-type(1)>h3+img {
+        width: 20em; 
+        height: 20em; 
+    }
+    /*Carrusel más de 60 genera error de rendimiento*/
+    /*Selector Specificity:(005)*/
+    main button+section+section+article {
+        /*Redefinido anchura de article*/
+        width: 60%;
+        /*Redefinido altura de article*/
+        height: 30vh;
+    }
+
+    /*Mapa Dinámico*/
+    /*Selector Specificity: (013)*/
+    main section:nth-of-type(2)>div {
+        /*Redefinido anchura de div*/
+        width: 20em; 
+        /*Redefinido altura de div*/
+        height: 20em; 
+    }
+}

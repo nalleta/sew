@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>F1Desktop-Relaciones</title>
+    <meta name ="author" content ="Ignacio Llaneza" />
+    <meta name ="description" content ="Utilización de las APIs de html5" />
+    <meta name ="keywords" content ="API" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/api.css" />
+    <link rel="icon" href="multimedia/imagenes/iconoF1.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/api.js"></script>
+</head>
+<body>
+    <header>
+        <h1>F1Desktop</h1>
+        <nav> 
+            <a href="index.html">Inicio</a>
+            <a href="piloto.html">Piloto</a>
+            <a href="noticias.html">Noticias</a>    
+            <a href="calendario.html">Calendario</a>
+            <a href="meteorologia.html">Meteorología</a>
+            <a href="circuito.html">Circuito</a>
+            <a href="viajes.php">Viajes</a>
+            <a class="active" href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <p>Estás en: <a href="index.html">Inicio</a> / <a href="juegos.html">Juegos</a> / <a href="api.html">Relaciones</a></p>
+    <h2>Juegos</h2>
+    <section>
+        <h3>Juegos sobre la Fórmula 1</h3>
+            <p><a href="memoria.html">Memoria</a></p>
+            <p><a href="semaforo.php">Semáforo</a></p>
+            <p><a href="api.html">Relaciones</a></p>
+            <p><a href="php/fichajes.php">Fichajes</a></p>
+    </section>
+<main>
+    <section>   
+        <h3>Relaciones</h3>
+        <p>Arrastra los nombres de los circuitos y suéltalos en las ubicaciones correctas.</p>
+        <h4>Opciones extra</h4>
+        <p>Pulsa "Enter" para hacer pantalla completa y disfrutar mejor del juego</p>
+    </section>
+    <section>
+        <h3>Sube tu propia plantilla</h3>
+        <p><label>Selecciona el archivo que tiene tus datos: <input type="file" onchange="r.readInputFile(this.files);"></label></p>
+    </section>
+    <section>
+        <h4>Circuitos</h4>
+    </section>
+    <section>
+        <h4>Paises</h4>
+    </section>
+    <script>var r = new Relaciones();</script>
+    
+</main>
+</body>
+</html>

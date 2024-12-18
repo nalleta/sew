@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>F1Desktop-APIs</title>
+    <meta name="author" content="Ignacio Llaneza">
+    <meta name="description" content="Herramienta de gestión de futuros fichajes de F1">
+    <meta name="keywords" content="Fichajes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="../estilo/layout.css">
+    <link rel="icon" href="../multimedia/imagenes/iconoF1.png">
+</head>
+<body>
+    <header>
+        <h1>F1Desktop</h1>
+        <nav> 
+            <a href="../index.html">Inicio</a>
+            <a href="../piloto.html">Piloto</a>
+            <a href="../noticias.html">Noticias</a>    
+            <a href="../calendario.html">Calendario</a>
+            <a href="../meteorologia.html">Meteorología</a>
+            <a href="../circuito.php">Circuito</a>
+            <a href="../viajes.php">Viajes</a>
+            <a class="active" href="../juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <p>Estás en: <a href="../index.html">Inicio</a> / <a href="../juegos.html">Juegos</a>/ <a href="fichajes.php">Fichajes</a></p>
+    <h2>Juegos</h2>
+    <section>
+        <h3>Juegos sobre la Fórmula 1</h3>
+            <p><a href="memoria.html">Memoria</a></p>
+            <p><a href="semaforo.php">Semáforo</a></p>
+            <p><a href="api.html">Relaciones</a></p>
+            <p><a href="php/fichajes.php">Fichajes</a></p>
+    </section>
+<main>
+    <h3>Registro de fichajes</h3>
+    <h4>Cómo funciona</h4>
+    <p>Aquí podras almacenar resultados sobre alguno de los fichajes más prometedores que acechan al mundo de la fórmula uno.</p>
+    <section>
+        <h4>Búsqueda de resultados</h4>
+        <h5>Pilotos</h5>
+        <form action="#" method="post">
+            <p><label>Nombre del piloto: <input type="text" name="piloto"></label></p><p>
+            </p><p><label>Apellido del piloto: <input type="text" name="apellido"></label></p><p>
+            <input type="submit" value="Buscar piloto" name="pilot">
+        </p></form>
+        <h5>Escuderías</h5>
+        <form action="#" method="post">
+            <p><label>Nombre de la escudería: <input type="text" name="teamName"></label></p><p>
+            <input type="submit" value="Buscar escudería" name="team">
+        </p></form>
+        <h5>Modelos</h5>
+        <form action="#" method="post">
+            <p><label>Nombre del modelo: <input type="text" name="modelName"></label></p><p>
+            <input type="submit" value="Buscar modelo" name="model">
+        </p></form>
+    </section>
+    <section>
+        <h4>Gestión de datos</h4>
+        <h5>Reiniciar los datos</h5>
+        <form action="#" method="post">
+            <input type="submit" value="Generar" name="restart">
+        </form>
+        <h5>Importar datos</h5>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <p><label>Selecciona el archivo: <input type="file" name="cvsfile" accept=".csv" required=""></label></p><p>
+            <input type="submit" value="Importar" name="import">
+        </p></form>
+        <h5>Exportar datos</h5>
+        <form action="#" method="post">
+            <input type="submit" value="Exportar" name="export">
+        </form>
+    </section>
+    <section><h4>Resultados de la búsqueda</h4><h5>Información del piloto</h5><p>Nombre completo: Carlos Serrano</p><p>Edad: 24</p><p>Nacionalidad: España</p><h5>Modelos registrados del piloto</h5><ol><li>Ferrari SF-24, Mejor tiempo: 00:01:29</li><li>Red Bull RB20, Mejor tiempo: 00:01:32</li></ol><h5>Escuderías interesadas</h5><ol><li>Escudería: Red Bull Racing, Salario propuesto: 1500000.00€</li><li>Escudería: BWT Alpine F1 Team, Salario propuesto: 1400000.00€</li></ol>
+</section></main>
+
+
+</body></html>

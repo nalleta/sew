@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>F1Destop-Meteorología</title>
+    <meta name="author" content="Ignacio Llaneza">
+    <meta name="description" content="documento para utilizar en otros módulos de la asign">
+    <meta name="keywords" content="meteorología, tiempo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/article_elements.css">
+    <link rel="icon" href="multimedia/imagenes/iconoF1.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/pais.js"></script>
+</head>
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+    <h1>F1Desktop</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="piloto.html">Piloto</a>
+        <a href="noticias.html">Noticias</a>    
+        <a href="calendario.html">Calendario</a>
+        <a class="active" href="meteorologia.html">Meteorología</a>
+        <a href="circuito.html">Circuito</a>
+        <a href="viajes.php">Viajes</a>
+        <a href="juegos.html">Juegos</a>
+    </nav>  
+    </header>   
+    <p>Estás en: <a href="index.html">Inicio</a> / <a href="meteorología.html">Meteorología</a></p>
+    <script>var pais = new Pais("Australia", "Canberra", 26020805);pais.initOthers()</script>
+    <main>
+    <h2>Meteorología</h2>
+    <h3>Datos sobre Australia</h3>
+    <h4>Información principal</h4>
+    <p>El país en el que se encuentra nuestro circuito es <script>document.write(pais.getNombrePais());</script>Australia, cuya capital es <script>document.write(pais.getNombreCapital());</script>Canberra.</p>
+    <h4>Información extra</h4>
+    <script>document.write(pais.getInfoSecundaria())</script><ol><li>Nombre del circuito: ALbert Park</li><li>Población total: 26020805</li><li>Tipo de gobierno: Monarquia constitucional federal</li><li>Religión mayoritaria: Cristianismo</li></ol>
+    <h5>Coordenadas de meta</h5>
+    <script>pais.getCoordenadas()</script><p>Las coordenadas de la meta del circuito son:</p><p>Longitud = 144.968985, latitud = -37.8500634, altitud = 4.8980248.</p>
+    <script>pais.getInfoMeteorologia()</script>
+    <section><h3>Información meteorológica del circuito</h3><article><h4>Día: 2024-12-18 - Hora: 00:00:00</h4><img src="https://openweathermap.org/img/wn/01d@2x.png" alt="La descripción climática es clear sky"><p>Temperatura mínima: 19.87°C</p><p>Temperatura máxima: 20.74°C</p><p>Humedad: 47%</p><p>Cantidad de lluvia del día: no encontrada</p></article><article><h4>Día: 2024-12-19 - Hora: 00:00:00</h4><img src="https://openweathermap.org/img/wn/01d@2x.png" alt="La descripción climática es clear sky"><p>Temperatura mínima: 23.5°C</p><p>Temperatura máxima: 23.5°C</p><p>Humedad: 39%</p><p>Cantidad de lluvia del día: no encontrada</p></article><article><h4>Día: 2024-12-20 - Hora: 00:00:00</h4><img src="https://openweathermap.org/img/wn/01d@2x.png" alt="La descripción climática es clear sky"><p>Temperatura mínima: 28.22°C</p><p>Temperatura máxima: 28.22°C</p><p>Humedad: 35%</p><p>Cantidad de lluvia del día: no encontrada</p></article><article><h4>Día: 2024-12-21 - Hora: 00:00:00</h4><img src="https://openweathermap.org/img/wn/04d@2x.png" alt="La descripción climática es broken clouds"><p>Temperatura mínima: 19.3°C</p><p>Temperatura máxima: 19.3°C</p><p>Humedad: 55%</p><p>Cantidad de lluvia del día: no encontrada</p></article><article><h4>Día: 2024-12-22 - Hora: 00:00:00</h4><img src="https://openweathermap.org/img/wn/04d@2x.png" alt="La descripción climática es overcast clouds"><p>Temperatura mínima: 18.66°C</p><p>Temperatura máxima: 18.66°C</p><p>Humedad: 51%</p><p>Cantidad de lluvia del día: no encontrada</p></article></section></main>
+
+</body></html>

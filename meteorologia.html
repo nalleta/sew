@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>F1Destop-Meteorología</title>
+    <meta name ="author" content ="Ignacio Llaneza" />
+    <meta name ="description" content ="documento para utilizar en otros módulos de la asign" />
+    <meta name ="keywords" content ="meteorología, tiempo" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/article_elements.css">
+    <link rel="icon" href="multimedia/imagenes/iconoF1.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src = "js/pais.js"></script>
+</head>
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+    <h1>F1Desktop</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="piloto.html">Piloto</a>
+        <a href="noticias.html">Noticias</a>    
+        <a href="calendario.html">Calendario</a>
+        <a class="active" href="meteorologia.html">Meteorología</a>
+        <a href="circuito.html">Circuito</a>
+        <a href="viajes.php">Viajes</a>
+        <a href="juegos.html">Juegos</a>
+    </nav>  
+    </header>   
+    <p>Estás en: <a href="index.html">Inicio</a> / <a href="meteorología.html">Meteorología</a></p>
+    <script>var pais = new Pais("Australia", "Canberra", 26020805);pais.initOthers()</script>
+    <main>
+    <h2>Meteorología</h2>
+    <h3>Datos sobre Australia</h3>
+    <h4>Información principal</h4>
+    <p>El país en el que se encuentra nuestro circuito es <script>document.write(pais.getNombrePais());</script>, cuya capital es <script>document.write(pais.getNombreCapital());</script>.</p>
+    <h4>Información extra</h4>
+    <script>document.write(pais.getInfoSecundaria())</script>
+    <h5>Coordenadas de meta</h5>
+    <script>pais.getCoordenadas()</script>
+    <script>pais.getInfoMeteorologia()</script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>F1Desktop-Calendario</title>
+    <meta name ="author" content ="Ignacio Llaneza" />
+    <meta name ="description" content ="documento para utilizar en otros módulos de la asignatura" />
+    <meta name ="keywords" content ="calendario, día, mes" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/agenda_grid.css">
+    <link rel="icon" href="multimedia/imagenes/iconoF1.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src = "js/agenda.js"></script>
+</head>
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+    <h1>F1Desktop</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="piloto.html">Piloto</a>
+        <a href="noticias.html">Noticias</a>    
+        <a class="active" href="calendario.html">Calendario</a>
+        <a href="meteorologia.html">Meteorología</a>
+        <a href="circuito.html">Circuito</a>
+        <a href="viajes.php">Viajes</a>
+        <a href="juegos.html">Juegos</a>
+    </nav>
+    </header>
+    <p>Estás en: <a href="index.html">Inicio</a> / <a href="calendario.html">Calendario</a></p>
+    <script>
+        var ag = new Agenda();
+    </script>
+    <main>
+    <h2>Calendario</h2>
+    <p>Mostrar agenda de esta temporada:</p>
+    <button onclick="ag.getCarreras()">Agenda</button>
+    </main>
+</body>
+</html>

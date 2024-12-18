@@ -1,0 +1,35 @@
+Coche;"Alpine A524";980;Francia
+Coche;"Ferrari SF-24";1015;Italia
+Coche;"McLaren MCL38";990;"Reino Unido"
+Coche;"Mercedes W15";1020;Alemania
+Coche;"Red Bull RB20";1000;"Reino Unido"
+Piloto;David;Morales;España;24
+Piloto;Emily;Walker;"Reino Unido";23
+Piloto;Thiago;Ferreira;Brasil;27
+Piloto;Emma;Klein;Alemania;22
+Piloto;Lucas;Gonzalez;México;25
+Piloto;Sophie;Dupont;Francia;26
+Escuderia;"Aston Martin Aramco Cognizant";"Reino Unido"
+Escuderia;"BWT Alpine F1 Team";Francia
+Escuderia;"Kick Sauber F1 Team";Suiza
+Escuderia;"McLaren F1 Team";"Reino Unido"
+Escuderia;"Mercedes-AMG Petronas Motorsport";Alemania
+Escuderia;"MoneyGram Haas F1 Team";"Estados Unidos"
+Escuderia;"Red Bull Racing";"Reino Unido"
+Escuderia;"Scuderia Ferrari";Italia
+Escuderia;"Visa Cashapp RB";Italia
+Escuderia;"Williams Racing";"Reino Unido"
+Prefiere;David;Morales;"BWT Alpine F1 Team";1450000.00
+Prefiere;Emily;Walker;"Red Bull Racing";1350000.00
+Prefiere;Thiago;Ferreira;"Scuderia Ferrari";1500000.00
+Prefiere;Emma;Klein;"Mercedes-AMG Petronas Motorsport";1300000.00
+Prefiere;Lucas;Gonzalez;"McLaren F1 Team";1250000.00
+Prefiere;Sophie;Dupont;"Aston Martin Aramco Cognizant";1400000.00
+Prefiere;Sophie;Dupont;"Visa Cashapp RB";1380000.00
+Utiliza;David;Morales;"Ferrari SF-24";00:01:30
+Utiliza;Emily;Walker;"Red Bull RB20";00:01:31
+Utiliza;Thiago;Ferreira;"Mercedes W15";00:01:29
+Utiliza;Emma;Klein;"McLaren MCL38";00:01:33
+Utiliza;Lucas;Gonzalez;"Alpine A524";00:01:32
+Utiliza;Sophie;Dupont;"Ferrari SF-24";00:01:34
+Utiliza;Sophie;Dupont;"Visa Cashapp RB";00:01:28

@@ -1,0 +1,94 @@
+/* Ignacio Llaneza Aller UO294914 */
+@keyframes semaforo {
+    from{background-color: #000A;}
+    to{background-color: red;}
+}
+
+@keyframes out {
+    from{background-color: red;}
+    to{background-color: #000A;}
+}
+
+/*Specificity(001)*/
+main {
+    width: 60%;
+    height: 50%;
+    margin: auto;
+      
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5% 3%;
+    align-items: center;
+}
+
+/*Specificity(001)*/
+h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+  
+/*Specificity(001)*/
+div {
+    background-color: #000A;
+    border: 5px solid black;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+/*Specificity(002)*/
+main p{
+    grid-row: 4 / span 1;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+  
+/*Specificity(011)*/
+button:first-of-type {
+    grid-column: 2 / span 1;
+}
+  
+/*Specificity(011)*/
+button:nth-of-type(2) {
+    grid-column: 3 / span 1;
+}
+
+/*Specificity(022)*/
+main.load div:first-of-type {
+    animation-name: semaforo;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+/*Specificity(022)*/
+main.load div:nth-of-type(2) {
+    animation-name: semaforo;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/*Specificity(022)*/
+main.load div:nth-of-type(3) {
+    animation-name: semaforo;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+/*Specificity(022)*/
+main.load div:nth-of-type(4) {
+    animation-name: semaforo;
+    animation-duration: 0.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+/*Specificity(022)*/
+main.load.unload div{
+    animation-name: out;
+    animation-delay: 0s;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}

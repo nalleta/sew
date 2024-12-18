@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>F1Destop-Circuito</title>
+    <meta name ="author" content ="Ignacio Llaneza" />
+    <meta name ="description" content ="documento para utilizar en otros módulos de la asignatura" />
+    <meta name ="keywords" content ="circuito, recorrido" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="icon" href="multimedia/imagenes/iconoF1.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/circuito.js"></script>    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRFusV9KGN7Kmvu4YKBCitK4ymw5ofj84&loading=async"></script>
+</head>
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+    <h1>F1Desktop</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="piloto.html">Piloto</a>
+        <a href="noticias.html">Noticias</a>    
+        <a href="calendario.html">Calendario</a>
+        <a href="meteorologia.html">Meteorología</a>
+        <a class="active" href="circuito.html">Circuito</a>
+        <a href="viajes.php">Viajes</a>
+        <a href="juegos.html">Juegos</a>
+    </nav>
+    </header>
+    <p>Estás en: <a href="index.html">Inicio</a> / <a href="circuito.html">Circuito</a></p>
+    <main>
+    <h2>Circuito</h2>
+    <script>var c = new Circuito()</script>
+    <section>
+        <h3>Carga tus archivos del circuito</h3>
+        <label>Carga tus archivos aquí: <input type="file" onchange="c.procesaArchivos(this.files);" multiple=""></label>
+    </section>
+    <section>
+        <h3>Tus archivos procesados</h3>
+    <h4>Albert Park</h4><p>Localización: Melbourne, Australia</p><p>Longitud: 5.303 kilómetros</p><p>Anchura media: 5.303 kilómetros</p><p>Número de vueltas: 58 vueltas</p><p>Fecha de la carrera en España: 2024-03-24 a las 04:30:00</p><h5>Coordenadas iniciales: lon-144.9689996, lat--37.8500761, alt-4.898</h5><p></p><p>Segmento 1</p><p>Tramo: 1</p><p>Distancia del segmento: 9.32metros</p><p>Coordenadas iniciales: lon: 144.9662229, lat: -37.8467394, alt: 4.428</p><p>Segmento 2</p><p>Tramo: 1</p><p>Distancia del segmento: 616.81metros</p><p>Coordenadas iniciales: lon: 144.9621462, lat: -37.8422066, alt: 4.6803</p><p>Segmento 3</p><p>Tramo: 1</p><p>Distancia del segmento: 146.46metros</p><p>Coordenadas iniciales: lon: 144.9637148, lat: -37.8417953, alt: 4.686</p><p>Segmento 4</p><p>Tramo: 1</p><p>Distancia del segmento: 217.93metros</p><p>Coordenadas iniciales: lon: 144.9637168, lat: -37.8398564, alt: 5.5496</p><p>Segmento 5</p><p>Tramo: 2</p><p>Distancia del segmento: 422.26metros</p><p>Coordenadas iniciales: lon: 144.9678925, lat: -37.8380550, alt: 4.54748</p><p>Segmento 6</p><p>Tramo: 2</p><p>Distancia del segmento: 138.73metros</p><p>Coordenadas iniciales: lon: 144.9693757, lat: -37.8384531, alt: 1.04765</p><p>Segmento 7</p><p>Tramo: 2</p><p>Distancia del segmento: 216.68metros</p><p>Coordenadas iniciales: lon: 144.9713322, lat: -37.8396853, alt: 0.610757</p><p>Segmento 8</p><p>Tramo: 2</p><p>Distancia del segmento: 220.43metros</p><p>Coordenadas iniciales: lon: 144.9717477, lat: -37.8416460, alt: 5.3557002</p><p>Segmento 9</p><p>Tramo: 2</p><p>Distancia del segmento: 343.87metros</p><p>Coordenadas iniciales: lon: 144.9705818, lat: -37.8445734, alt: 1.3964248</p><p>Segmento 10</p><p>Tramo: 2</p><p>Distancia del segmento: 274.27metros</p><p>Coordenadas iniciales: lon: 144.9715911, lat: -37.8469014, alt: 1.0479151</p><p>Segmento 11</p><p>Tramo: 3</p><p>Distancia del segmento: 209.76metros</p><p>Coordenadas iniciales: lon: 144.9734176, lat: -37.8480928, alt: 5.1056796</p><p>Segmento 12</p><p>Tramo: 3</p><p>Distancia del segmento: 120.67metros</p><p>Coordenadas iniciales: lon: 144.9747817, lat: -37.8481040, alt: 5.1938677</p><p>Segmento 13</p><p>Tramo: 3</p><p>Distancia del segmento: 294.34metros</p><p>Coordenadas iniciales: lon: 144.9772939, lat: -37.8498499, alt: 5.7381754</p><p>Segmento 14</p><p>Tramo: 3</p><p>Distancia del segmento: 410.96metros</p><p>Coordenadas iniciales: lon: 144.9786139, lat: -37.8533880, alt: 6.0217242</p><p>Segmento 15</p><p>Tramo: 3</p><p>Distancia del segmento: 255.43metros</p><p>Coordenadas iniciales: lon: 144.9757788, lat: -37.8539085, alt: 4.7670262</p><p>Segmento 16</p><p>Tramo: 3</p><p>Distancia del segmento: 245.39metros</p><p>Coordenadas iniciales: lon: 144.9741073, lat: -37.8520983, alt: 4.7375816</p><p>Segmento 17</p><p>Tramo: 3</p><p>Distancia del segmento: 145.76metros</p><p>Coordenadas iniciales: lon: 144.9727597, lat: -37.8528808, alt: 4.4096870</p><p>Segmento 18</p><p>Tramo: 3</p><p>Distancia del segmento: 456.81metros</p><p>Coordenadas iniciales: lon: 144.9689850, lat: -37.8500634, alt: 4.8980248</p><p>Segmento 19</p><p>Tramo: undefined</p><p>Distancia del segmento: undefined</p><p>Coordenadas iniciales: lon: undefined, lat: undefined, alt: undefined</p><h5>Fuentes</h5><h6>Enlace número 0</h6><a href="https://www.motorpasion.com/formula1/analisis-tecnico-del-circuito-de-albert-park-melbourne">Enlace</a><h6>Enlace número 1</h6><a href="https://es.wikipedia.org/wiki/Circuito_de_Albert_Park">Enlace</a><h6>Enlace número 2</h6><a href="https://www.redbull.com/es-es/plano-del-trazado-de-albert-park-melbourne">Enlace</a><h6>Enlace número 3</h6><a href="https://www.formula1.com/en/racing/2024/australia">Enlace</a><h6>Enlace número 4</h6><a href="https://www.dazn.com/es-ES/news/motor/circuito-de-albert-park-donde-esta-como-es-caracteristicas-como-llegar-y-fotos-del-escenario-del-gp-de-australia-del-mundial-de-f1/l72phjxopbx61bsz5jkudezvy">Enlace</a><nav></nav><h5>Multimedia</h5><h6>Imágenes</h6><h6>Imágen 1</h6><img src="multimedia/imagenes/AlbertPark.jpg" alt="Imagen relacionada con el circuito"><h6>Imágen 2</h6><img src="multimedia/imagenes/CircuitoEsquematizado.png" alt="Imagen relacionada con el circuito"><h6>Imágen 3</h6><img src="multimedia/imagenes/AlbertParkArriba.jpg" alt="Imagen relacionada con el circuito"><h6>Vídeos</h6><video src="multimedia/video/AlbertPark.mp4" controls=""></video></section>
+</main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>F1Desktop-Calendario</title>
+    <meta name ="author" content ="Ignacio Llaneza" />
+    <meta name ="description" content ="documento para utilizar en otros módulos de la asignatura" />
+    <meta name ="keywords" content ="calendario, día, mes" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/agenda_grid.css">
+    <link rel="icon" href="multimedia/imagenes/iconoF1.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src = "js/agenda.js"></script>
+</head>
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+    <h1>F1Desktop</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="piloto.html">Piloto</a>
+        <a href="noticias.html">Noticias</a>    
+        <a class="active" href="calendario.html">Calendario</a>
+        <a href="meteorologia.html">Meteorología</a>
+        <a href="circuito.html">Circuito</a>
+        <a href="viajes.php">Viajes</a>
+        <a href="juegos.html">Juegos</a>
+    </nav>
+    </header>
+    <p>Estás en: <a href="index.html">Inicio</a> / <a href="calendario.html">Calendario</a></p>
+    <script>
+        var ag = new Agenda();
+    </script>
+    <main>
+    <h2>Calendario</h2>
+    <p>Mostrar agenda de esta temporada:</p>
+    <label>Presiona este botón para generar el calendario de F1:<button onclick="ag.getCarreras()" disabled="disabled">Agenda</button></label>
+    <section>
+        <h2>Próximas carreras</h2>
+        <article><h3>Bahrain Grand Prix</h3><p>Nombre del circuito: Bahrain International Circuit</p><p>Coordenadas: latitud 26.0325, longitud 50.5106</p><p>Fecha: 2024-03-02</p><p>Hora: 15:00:00Z</p></article><article><h3>Saudi Arabian Grand Prix</h3><p>Nombre del circuito: Jeddah Corniche Circuit</p><p>Coordenadas: latitud 21.6319, longitud 39.1044</p><p>Fecha: 2024-03-09</p><p>Hora: 17:00:00Z</p></article><article><h3>Australian Grand Prix</h3><p>Nombre del circuito: Albert Park Grand Prix Circuit</p><p>Coordenadas: latitud -37.8497, longitud 144.968</p><p>Fecha: 2024-03-24</p><p>Hora: 04:00:00Z</p></article><article><h3>Japanese Grand Prix</h3><p>Nombre del circuito: Suzuka Circuit</p><p>Coordenadas: latitud 34.8431, longitud 136.541</p><p>Fecha: 2024-04-07</p><p>Hora: 05:00:00Z</p></article><article><h3>Chinese Grand Prix</h3><p>Nombre del circuito: Shanghai International Circuit</p><p>Coordenadas: latitud 31.3389, longitud 121.22</p><p>Fecha: 2024-04-21</p><p>Hora: 07:00:00Z</p></article><article><h3>Miami Grand Prix</h3><p>Nombre del circuito: Miami International Autodrome</p><p>Coordenadas: latitud 25.9581, longitud -80.2389</p><p>Fecha: 2024-05-05</p><p>Hora: 20:00:00Z</p></article><article><h3>Emilia Romagna Grand Prix</h3><p>Nombre del circuito: Autodromo Enzo e Dino Ferrari</p><p>Coordenadas: latitud 44.3439, longitud 11.7167</p><p>Fecha: 2024-05-19</p><p>Hora: 13:00:00Z</p></article><article><h3>Monaco Grand Prix</h3><p>Nombre del circuito: Circuit de Monaco</p><p>Coordenadas: latitud 43.7347, longitud 7.42056</p><p>Fecha: 2024-05-26</p><p>Hora: 13:00:00Z</p></article><article><h3>Canadian Grand Prix</h3><p>Nombre del circuito: Circuit Gilles Villeneuve</p><p>Coordenadas: latitud 45.5, longitud -73.5228</p><p>Fecha: 2024-06-09</p><p>Hora: 18:00:00Z</p></article><article><h3>Spanish Grand Prix</h3><p>Nombre del circuito: Circuit de Barcelona-Catalunya</p><p>Coordenadas: latitud 41.57, longitud 2.26111</p><p>Fecha: 2024-06-23</p><p>Hora: 13:00:00Z</p></article><article><h3>Austrian Grand Prix</h3><p>Nombre del circuito: Red Bull Ring</p><p>Coordenadas: latitud 47.2197, longitud 14.7647</p><p>Fecha: 2024-06-30</p><p>Hora: 13:00:00Z</p></article><article><h3>British Grand Prix</h3><p>Nombre del circuito: Silverstone Circuit</p><p>Coordenadas: latitud 52.0786, longitud -1.01694</p><p>Fecha: 2024-07-07</p><p>Hora: 14:00:00Z</p></article><article><h3>Hungarian Grand Prix</h3><p>Nombre del circuito: Hungaroring</p><p>Coordenadas: latitud 47.5789, longitud 19.2486</p><p>Fecha: 2024-07-21</p><p>Hora: 13:00:00Z</p></article><article><h3>Belgian Grand Prix</h3><p>Nombre del circuito: Circuit de Spa-Francorchamps</p><p>Coordenadas: latitud 50.4372, longitud 5.97139</p><p>Fecha: 2024-07-28</p><p>Hora: 13:00:00Z</p></article><article><h3>Dutch Grand Prix</h3><p>Nombre del circuito: Circuit Park Zandvoort</p><p>Coordenadas: latitud 52.3888, longitud 4.54092</p><p>Fecha: 2024-08-25</p><p>Hora: 13:00:00Z</p></article><article><h3>Italian Grand Prix</h3><p>Nombre del circuito: Autodromo Nazionale di Monza</p><p>Coordenadas: latitud 45.6156, longitud 9.28111</p><p>Fecha: 2024-09-01</p><p>Hora: 13:00:00Z</p></article><article><h3>Azerbaijan Grand Prix</h3><p>Nombre del circuito: Baku City Circuit</p><p>Coordenadas: latitud 40.3725, longitud 49.8533</p><p>Fecha: 2024-09-15</p><p>Hora: 11:00:00Z</p></article><article><h3>Singapore Grand Prix</h3><p>Nombre del circuito: Marina Bay Street Circuit</p><p>Coordenadas: latitud 1.2914, longitud 103.864</p><p>Fecha: 2024-09-22</p><p>Hora: 12:00:00Z</p></article><article><h3>United States Grand Prix</h3><p>Nombre del circuito: Circuit of the Americas</p><p>Coordenadas: latitud 30.1328, longitud -97.6411</p><p>Fecha: 2024-10-20</p><p>Hora: 19:00:00Z</p></article><article><h3>Mexico City Grand Prix</h3><p>Nombre del circuito: Autódromo Hermanos Rodríguez</p><p>Coordenadas: latitud 19.4042, longitud -99.0907</p><p>Fecha: 2024-10-27</p><p>Hora: 20:00:00Z</p></article><article><h3>São Paulo Grand Prix</h3><p>Nombre del circuito: Autódromo José Carlos Pace</p><p>Coordenadas: latitud -23.7036, longitud -46.6997</p><p>Fecha: 2024-11-03</p><p>Hora: 17:00:00Z</p></article><article><h3>Las Vegas Grand Prix</h3><p>Nombre del circuito: Las Vegas Strip Street Circuit</p><p>Coordenadas: latitud 36.1147, longitud -115.173</p><p>Fecha: 2024-11-23</p><p>Hora: 06:00:00Z</p></article><article><h3>Qatar Grand Prix</h3><p>Nombre del circuito: Losail International Circuit</p><p>Coordenadas: latitud 25.49, longitud 51.4542</p><p>Fecha: 2024-12-01</p><p>Hora: 17:00:00Z</p></article><article><h3>Abu Dhabi Grand Prix</h3><p>Nombre del circuito: Yas Marina Circuit</p><p>Coordenadas: latitud 24.4672, longitud 54.6031</p><p>Fecha: 2024-12-08</p><p>Hora: 13:00:00Z</p></article></section></main>
+
+</body></html>

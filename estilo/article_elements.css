@@ -1,0 +1,47 @@
+/* Ignacio Llaneza Aller UO294914 */
+/*Specificity(012)*/
+main section:last-of-type{
+    width: 100%;
+    height: 80%;
+    margin: auto;
+      
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10% 3%;
+    align-items: center;
+}
+
+/*Specificity(012), Specificity(012), Specificity(012)*/
+section:last-of-type h2, section:last-of-type h3, section:last-of-type h4{
+    font-size: x-large;
+    grid-column: 1 / -1;
+    border-bottom-style: solid;
+    border-bottom-color: green;
+}
+
+/*Specificity(013)*/
+main section:last-of-type article{
+    border-style: groove;
+    padding: 2em;
+    margin:0.5em;
+    /*Color heredado de body en estilo.css*/
+    background-color: #C4F3AA;
+}
+
+@media screen and (max-width: 800px) {
+    /*Selector Specifity: (012)*/
+    main section:last-of-type{
+        /*Redefinición de número de columnas para la sección*/
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    /*Selector Specifity: (012)*/
+    main section:last-of-type{
+        /*Redefinición de número de columnas para la sección*/
+        grid-template-columns: 1fr;
+    }
+    
+}

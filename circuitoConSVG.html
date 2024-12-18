@@ -1,0 +1,47 @@
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>F1Destop-Circuito</title>
+    <meta name="author" content="Ignacio Llaneza">
+    <meta name="description" content="documento para utilizar en otros módulos de la asignatura">
+    <meta name="keywords" content="circuito, recorrido">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="icon" href="multimedia/imagenes/iconoF1.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/circuito.js"></script>    
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRFusV9KGN7Kmvu4YKBCitK4ymw5ofj84&amp;loading=async"></script>
+    <script src="https://maps.googleapis.com/maps-api-v3/api/js/59/3a/intl/es_ALL/main.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/59/3a/intl/es_ALL/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/59/3a/intl/es_ALL/util.js"></script></head>
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+    <h1>F1Desktop</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="piloto.html">Piloto</a>
+        <a href="noticias.html">Noticias</a>    
+        <a href="calendario.html">Calendario</a>
+        <a href="meteorologia.html">Meteorología</a>
+        <a class="active" href="circuito.html">Circuito</a>
+        <a href="viajes.php">Viajes</a>
+        <a href="juegos.html">Juegos</a>
+    </nav>
+    </header>
+    <p>Estás en: <a href="index.html">Inicio</a> / <a href="circuito.html">Circuito</a></p>
+    <main>
+    <h2>Circuito</h2>
+    <script>var c = new Circuito()</script>
+    <section>
+        <h3>Carga tus archivos del circuito</h3>
+        <label>Carga tus archivos aquí: <input type="file" onchange="c.procesaArchivos(this.files);" multiple=""></label>
+    </section>
+    <section>
+        <h3>Tus archivos procesados</h3>
+    <h3>Altimetría de tu circuito</h3><!--?xml version="1.0" encoding="UTF-8"?-->
+    <svg xmlns="http://www.w3.org/2000/svg" version="2.0">
+<polyline points="0 4.125895, 381.11 4.428, 390.43 4.6803, 1007.24 4.686, 1153.7 5.5496, 1371.63 4.54748, 1793.89 1.04765, 1932.6200000000001 0.610757, 2149.3 5.3557002, 2369.73 1.3964248, 2713.6 1.0479151, 2987.87 5.1056796, 3197.63 5.1938677, 3318.3 5.7381754, 3612.6400000000003 6.0217242, 4023.6000000000004 4.7670262, 4279.030000000001 4.7375816, 4524.420000000001 4.409687, 4670.180000000001 4.8980248" style="fill:white;stroke:red;stroke-width:4"></polyline></svg>
+</section>
+</main>
+
+</body></html>
